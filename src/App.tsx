@@ -1,5 +1,6 @@
-import { motion, AnimatePresence, easeInOut } from "framer-motion"
-import { useState } from "react"
+// import { motion, AnimatePresence, easeInOut } from "framer-motion"
+// import { useState } from "react"
+import CollapsableList from "./CollapsableList"
 
 
 // const container = {
@@ -13,7 +14,7 @@ import { useState } from "react"
 
 const App = () => {
   // const features = ["fast","declarative" , "Powerful" , "Fun"]
-  const [open, setopen] = useState<boolean>(true)
+  // const [open, setopen] = useState<boolean>(true)
   // Basics 
   return (
     <div className="min-h-screen flex justify-center flex-col items-center">
@@ -42,7 +43,10 @@ const App = () => {
       </motion.li>
       ))}
       </motion.ul> */}
-      <motion.button
+
+
+
+      {/* <motion.button
         whileHover={{ scale: 1.05, y: -2 }}
         whileTap={{ scale: 0.96, y: 1 }}
         className="border p-2 m-2 bg-gray-600 text-white"
@@ -59,7 +63,12 @@ const App = () => {
         >
           THis is an animation alert
         </motion.div>}
-      </AnimatePresence>
+      </AnimatePresence> */}
+
+      {/* Expanding Details */}
+
+        <CollapsableList/>
+      
 
 
     </div>
